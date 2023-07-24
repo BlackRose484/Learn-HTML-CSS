@@ -1,0 +1,363 @@
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+#main{
+
+}
+#header{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+}
+#nav {
+    display: inline-block;
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a{
+     color: white;
+     text-decoration: none;
+     line-height: 46px;
+     padding: 0 24px;
+}
+
+#nav li:hover .subNav{
+    display: block;
+}
+
+
+#nav , .subNav {
+    list-style-type: none;
+}
+
+#nav .subNav{
+    display: none;
+    position: absolute;
+    background-color: white;
+    top :48px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+#nav .subNav li:hover a,
+#nav > li:hover > a{
+    color: black;
+    background-color: #ccc;
+    display: block;
+}
+
+#nav .subNav a{
+    color: black;
+    padding: 0 16px;
+}
+
+#nav .icon-down{
+    font-size: 14px;
+}
+
+.search-btn{
+    float: right;
+    
+}
+
+.search-btn .search-icon{
+    color: white;
+    line-height: 46px;
+    padding: 0 19px;
+    cursor: pointer;
+}
+
+.search-btn .search-icon:hover{
+    display: block;
+    background-color: red;
+}
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: #fff url(https://chuuniotaku.com/wp-content/uploads/2019/08/waifu-la-gi.jpg) top center no-repeat; 
+}
+
+#slider .text-content{
+    position: absolute; 
+    bottom: 0;
+    padding: 150px 0px;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+#content{
+    margin-right: auto;
+    margin-left: auto;
+    /* padding: 15px; */
+}
+
+#content .section-heading{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 10px 0px;
+    letter-spacing: 3px;
+}
+
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 14px;
+    margin: 15px 0px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .dec{
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .member-list{
+    text-align: center;
+}
+
+#content .member-item {
+    float: left;
+    margin-top: 25px;
+    width: 33.3333333%;
+}
+
+#content .member-avatar{
+    width: 250px;
+}
+
+.tour-ticket{
+    background-color: black;
+    position: relative;
+}
+
+.white-text{
+    color: white!important;
+}
+
+#content .list-time{
+    background-color: white;
+    margin: 15px;
+}
+
+#content .list-time li{
+    font-size: 15px;
+    border-bottom: 3px solid #ccc;
+    padding: 5px;
+    line-height: 1.4;    
+}
+
+.list-time .sold-out{
+    margin-left: 15px;
+    color: white;
+    background-color: red;
+    padding: 3px;
+}
+
+.list-time .remain{
+    float: right;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-top: -1px;
+}
+
+.section-content{
+    position: relative;
+}
+
+.place-list{
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-bottom: 30px;
+    width: 99%;
+
+}
+
+.place-item{
+    float: left;
+    width: 33.3333333%;
+    padding:7px;
+    font-size: 15px;
+    align-items: center;
+}
+
+.img-place{
+    width: 100%;
+    display: block;
+}
+
+.img-place:hover{
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: white;
+    padding: 30px;
+}  
+
+.place-body a{
+    text-decoration: none;
+}
+
+.place-heading{
+    padding:14px 0px;
+}
+
+.place-time{
+    padding-bottom: 10px;
+    opacity: 0.7;
+}
+
+.place-desc{
+    padding-bottom: 30px; 
+}
+
+.btn{
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 15px;
+    background-color: black;
+    color: white;
+}
+
+.btn:hover{
+    color: black;
+    background-color: #ccc;
+}
+
+#footer{
+
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal .modal-container{
+    position: relative;
+    width: 850px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
+    background-color: white;
+    animation: ModeFadeIn 0.5s;
+}
+
+.modal-close{
+    position: absolute;
+    padding: 12px;
+    right: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    opacity: 0.8;
+}
+
+.modal-header{
+    font-size: 30px;
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.modal-body{
+    padding: 10px;
+}
+
+.modal-label{
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+.modal-input{
+    margin-bottom: 18px;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+i.ti-bag {
+    margin-right: 13px;
+}
+
+.pay-btn{
+    width: 100%;
+    background-color: #009688;
+    color: white;
+    border-style: none;
+    font-size: 15px;
+    padding: 11px;
+}
+
+.pay-btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.modal-help{
+    text-align: right;
+    padding: 16px;
+}
+
+.modal.open{
+    display: flex;
+    
+}
+
+@keyframes ModeFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
